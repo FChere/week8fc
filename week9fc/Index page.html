@@ -2,10 +2,10 @@
     form {
   /* Center the form on the page */
   margin: 0 auto;
-  width: 400px;
+  width: 200px;
   /* Form outline */
   padding: 1em;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(35, 84, 183);
   border-radius: 1em;
 }
 
@@ -33,7 +33,7 @@ textarea {
   font: 1em sans-serif;
 
   /* Uniform text field size */
-  width: 300px;
+  width: 100px;
   box-sizing: border-box;
 
   /* Match form field borders */
@@ -65,3 +65,22 @@ button {
   margin-left: 0.5em;
 }
 </style>
+
+<form action="/my-handling-form-page" method="post">
+    <ul>
+      <li>
+        <label for="name">Player name:</label>
+        <input type="text" id="name" name="player_name" />
+      </li>
+      <li>
+        <select name="Modes" id="Modes">
+            <option value="Single player">Single player</option>
+            <option value="Two players">Two players</option>
+            <option value="Play with bot">Play with bot</option>
+          </select>
+      </li>
+      <li>
+        <button type="button">Start!</button>
+    </ul>
+  </form>
+  
